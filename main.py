@@ -80,20 +80,20 @@ color_map = {
 def encrypt_message(image_path, message):
     # Open the image
     img = Image.open(image_path)
-    # Convert the image to RGB mode
+    # Converts the image to RGB mode
     img = img.convert("RGB")
-    # Get the dimensions of the image
+    # Gets the dimensions of the image
     width, height = img.size
-    # Calculate the maximum message length
+    # Calculates the maximum message length
     max_length = (width * height)
-    # Check if the message is too long
+    # Checks if the message is too long
     if len(message) > max_length:
         raise ValueError(f"The message is too long. Maximum length is {max_length}.")
-    # Encrypt the message by writing the color values to the pixels
     i = 0
     for y in range(height):
         for x in range(width):
             if i < len(message):
+                # Encrypt the message by writing the color values to the pixels
                 char = message[i]
                 color = color_map[char]
                 i += 1
@@ -102,7 +102,7 @@ def encrypt_message(image_path, message):
                 # color = tuple(img.getpixel((x, y)))
                 color = (0, 0, 0)
             img.putpixel((x, y), color)
-    # Save the encrypted image
+    # Saves the encrypted image
     img.save('encrypted.png')
 
 
@@ -115,7 +115,6 @@ def decrypt_message(image_path):
     img = img.convert("RGB")
     # Gets the dimensions of the image
     width, height = img.size
-    # Decrypts the message by reading the color values from the pixels
     message = ''
     for y in range(height):
         for x in range(width):
