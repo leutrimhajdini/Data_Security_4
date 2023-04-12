@@ -1,6 +1,6 @@
 import random
 
-alphabet = " abcdefghijklmnopqrstuvwxyz,.!?;:><1234567890"
+alphabet = " ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz,.!?;:1234567890<>"
 
 char_to_rgb = {}
 

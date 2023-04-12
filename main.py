@@ -46,15 +46,13 @@ color_map = {
     '9': (58, 193, 52),
     '0': (122, 1, 20),
     '<': (225, 245, 132),
-    '>': (155, 193, 40)
+    '>': (155, 193, 40),
 }
 
 # Function to encrypt a message in an image
 def encrypt_message(image_path, message):
-    # Open the image
     img = Image.open(image_path)
-    # Convert the message to uppercase
-    message = message.upper()
+    # Converts the message to uppercase
     # Get the dimensions of the image
     width, height = img.size
     # Check if the message is too long to fit in the image
@@ -101,7 +99,7 @@ def decrypt_message(image_path):
     return message
 
 # Encrypt a message in an image
-encrypt_message('download.png', 'This is a secret message')
+encrypt_message('download.png', 'this is a secret message')
 # Decrypt the message from the encrypted image
 
 print("Decrypting message...")
