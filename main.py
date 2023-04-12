@@ -1,4 +1,5 @@
 from PIL import Image
+import random
 
 # Defining the color mapping for characters
 color_map = {
@@ -77,24 +78,32 @@ color_map = {
 
 # Function to encrypt a message in an image
 def encrypt_message(image_path, message):
+    # Open the image
     img = Image.open(image_path)
-    # Converts the message to uppercase
+    # Convert the image to RGB mode
+    img = img.convert("RGB")
     # Get the dimensions of the image
     width, height = img.size
-    # Check if the message is too long to fit in the image
-    if len(message) > width * height:
-        raise ValueError('Message is too long to fit in the image')
-    # Encrypt the message by mapping each character to a color and setting the pixel values
-    for i, char in enumerate(message):
-        # Get the color for the character
-        color = color_map.get(char)
-        # Get the pixel coordinates for the current index
-        x = i % width
-        y = i // width
-        # Set the pixel color
-        img.putpixel((x, y), color)
+    # Calculate the maximum message length
+    max_length = (width * height)
+    # Check if the message is too long
+    if len(message) > max_length:
+        raise ValueError(f"The message is too long. Maximum length is {max_length}.")
+    # Encrypt the message by writing the color values to the pixels
+    i = 0
+    for y in range(height):
+        for x in range(width):
+            if i < len(message):
+                char = message[i]
+                color = color_map[char]
+                i += 1
+            else:
+                # color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+                color = (0, 0, 0)
+            img.putpixel((x, y), color)
     # Save the encrypted image
     img.save('encrypted.png')
+
 
 
 
