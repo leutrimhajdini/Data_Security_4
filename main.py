@@ -99,6 +99,7 @@ def encrypt_message(image_path, message):
                 i += 1
             else:
                 # color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+                # color = tuple(img.getpixel((x, y)))
                 color = (0, 0, 0)
             img.putpixel((x, y), color)
     # Save the encrypted image
