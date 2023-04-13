@@ -77,7 +77,7 @@ color_map = {
 }
 
 # Function to encrypt a message in an image
-def encrypt_message(image_path, message):
+def encrypt_message(message,image_path):
     # Open the image
     img = Image.open(image_path)
     # Converts the image to RGB mode
