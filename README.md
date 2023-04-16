@@ -1,23 +1,28 @@
-Anetaret e grupit:
+## Encrypting and decrypting the text in the photo, where the characters are mapped in different colors (the mapping represents the key). The rest of the photo can be filled with any color.
 
-####Alketa Zekaj,
+### This is a project given from Data Security assistant Mergim Hoti
 
-####Albiona Mustafa,
+## Language
 
-####Gent Krasniqi,
+Project is developed in Python language - IntelliJ CDE application .
 
-####Leutrim Hajdini.
+In this project, we have implemented the steganography method in the code, where in a picture downloaded from the internet (random), we have encrypted a message using the mapping of characters with different colors as keys.
+To create mapping we used another code which also has random values between (0, 255), chooses an RGB value for each letter of the English alphabet and different characters.
+The code was created with the Python language and both the encryption and decryption of this text shown in the figure are done.
+The other part of the figure where there is no text, we made padding with black color.
 
-##Lenda: Siguria e te dhenave.
-
-Tema: Enkriptimi dhe dekriptimi i tekstit te fshehur ne foto, ku karakteret mapohen ne ngjyra te ndryshme (mapimi paraqet celesin). Pjesa e mbetur e fotos te behet pad me ndonje ngjyre.
-
-
-Ne kete projekt kemi implementuar metoden e steganografise ne kod, ku ne nje figure te shkarkuar ne internet (random), kemi bere enkriptimin e nje mesazhi duke perdorur mapping te karaktereve me ngjyra te ndryshme sikur çeles.
-Per te krijuar mapping kemi perdorur nje tjeter kod i cili po ashtu me vlera random ne mes te (0, 255), zgjedh nje vlere RGB per secilen shkronje te alfabetit anglez dhe karaktereve te ndryshme. 
-Kodi eshte krijuar me gjuhen PYTHON dhe ne te behet si enkriptimi ashtu edhe dekriptimi i ketij teksti te mshefur ne figure.
-Pjesen tjeter te figures ku nuk eshte teksti kemi bere padding me ngjyre te zeze.
-
+## Confidential
 
 ### This project is developed from the authors below with full rights, u can take it use it but at least leave credit for us!
+
+## Authors
+
+#### Alketa Zekaj,
+
+#### Albiona Mustafa,
+
+#### Gent Krasniqi,
+
+#### Leutrim Hajdini.
+
 
