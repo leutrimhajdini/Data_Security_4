@@ -6,6 +6,7 @@
 
 Project is developed in Python language - IntelliJ CDE application .
 
+## Usage
 In this project, we have implemented the steganography method in the code, where in a picture downloaded from the internet (random), we have encrypted a message using the mapping of characters with different colors as keys.
 To create mapping we used another code which also has random values between (0, 255), chooses an RGB value for each letter of the English alphabet and different characters.
 The code was created with the Python language and both the encryption and decryption of this text shown in the figure are done.
