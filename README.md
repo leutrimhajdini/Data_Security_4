@@ -10,7 +10,7 @@ Anetaret e grupit:
 
 ##Lenda: Siguria e te dhenave.
 
-Tema: Enkriptimi dhe dekriptimi i tekstit ne foto, ku karakteret mapohen ne ngjyra te ndryshme (mapimi paraqet celesin). Pjesa e mbetur e fotos te behet pad me ndonje ngjyre.
+Tema: Enkriptimi dhe dekriptimi i tekstit te fshehur ne foto, ku karakteret mapohen ne ngjyra te ndryshme (mapimi paraqet celesin). Pjesa e mbetur e fotos te behet pad me ndonje ngjyre.
 
 
 Ne kete projekt kemi implementuar metoden e steganografise ne kod, ku ne nje figure te shkarkuar ne internet (random), kemi bere enkriptimin e nje mesazhi duke perdorur mapping te karaktereve me ngjyra te ndryshme sikur çeles.
