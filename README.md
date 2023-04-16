@@ -18,5 +18,6 @@ Per te krijuar mapping kemi perdorur nje tjeter kod i cili po ashtu me vlera ran
 Kodi eshte krijuar me gjuhen PYTHON dhe ne te behet si enkriptimi ashtu edhe dekriptimi i ketij teksti te mshefur ne figure.
 Pjesen tjeter te figures ku nuk eshte teksti kemi bere padding me ngjyre te zeze.
 
+
 ### This project is developed from the authors below with full rights, u can take it use it but at least leave credit for us!
 
