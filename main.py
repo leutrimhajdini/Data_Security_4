@@ -134,8 +134,7 @@ def decrypt_message(image_path):
     return message
 
 # Encrypt a message in an image
-filename = input("Enter the name of the image file: ")
-encrypt_message('our first encryption in python', filename)
+encrypt_message('our first encryption in python', 'download.png')
 # Decrypt the message from the encrypted image
 
 print("Decrypting message....")
