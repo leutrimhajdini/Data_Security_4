@@ -4,18 +4,18 @@
 
 ## Language
 
-###Project is developed in Python anguage  - IntelliJ IDEA CE application.
+### Project is developed in Python anguage  - IntelliJ IDEA CE application.
 
-##Usage 
+## Usage 
 
 
 ##Confidential
 
-###This project is developed from the authors below with full rights, u can take it use it but at least leave credit for us!
+### This project is developed from the authors below with full rights, u can take it use it but at least leave credit for us!
 
-##Authors
+## Authors
 
-###Albiona Mustafa
-###Alketa Zekaj 
-###Gent Krasniqi 
-###Leutrim Hajdini
+### Albiona Mustafa
+### Alketa Zekaj 
+### Gent Krasniqi 
+### Leutrim Hajdini
